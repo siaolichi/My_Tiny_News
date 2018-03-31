@@ -10,7 +10,7 @@ Code for Proceesing in raspberry pi: GetPoto
 <h1>After connect to the raspi by SSH</h1>
 1. To get the photo from raspberry pi, run this code in your laptop:
 
-<code>rsync -avz -e ssh pi@lichipi:camera/ /Users/Siao/Desktop/camera</code>
+<pre>rsync -avz -e ssh pi@lichipi:camera/ /Users/Siao/Desktop/camera</pre>
 
 2. To run the car, run this code in your laptop:
 <pre>sudo Xvfb :1 -screen 0 1024x768x24 &lt/dev/null &amp 
