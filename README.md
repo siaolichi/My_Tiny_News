@@ -14,7 +14,7 @@ Code for Proceesing in raspberry pi: GetPoto
 
 2. To run the car, run this code in your laptop:
 <code>
-sudo Xvfb :1 -screen 0 1024x768x24 </dev/null &
-export DISPLAY=":1"
-/home/pi/processing-3.3.5/processing-java --sketch=/home/pi/Desktop/GetPhoto --run
+sudo Xvfb :1 -screen 0 1024x768x24 \</dev/null &</code>
+<code>export DISPLAY=":1"</code>
+<code>/home/pi/processing-3.3.5/processing-java --sketch=/home/pi/Desktop/GetPhoto --run
 </code>
