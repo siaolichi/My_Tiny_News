@@ -1,20 +1,19 @@
 
 #include <Servo.h>
 
-Servo myservo;  // create servo object to control a servo
-// twelve servo objects can be created on most boards
+//For Sensor
+#define echoPin 4 
+#define trigPin 3
+
+Servo myservo; 
 
 int posS = 0; 
  
- char val;
+char val;
 
- #define echoPin 4 // Echo Pin
- #define trigPin 3 // Trigger Pin
- #define LEDPin 13 // Onboard LED
-
- int maximumRange = 20; // Maximum range needed
- int minimumRange = 0; // Minimum range needed
- long duration, distance; // Duration used to calculate distance
+int maximumRange = 20; // Maximum range needed
+int minimumRange = 0; // Minimum range needed
+long duration, distance; // Duration used to calculate distance
 
 int randNumber = 0;
  
@@ -70,10 +69,6 @@ int randNumber = 0;
          randNumber = 0;
         
          if (distance <= maximumRange ){
-         /* Send a negative number to computer and Turn LED ON 
-         to indicate "out of range" */
-//             Serial.println("-1");
-//             digitalWrite(LEDPin, HIGH); 
              
              digitalWrite(6,LOW); digitalWrite(5,LOW); //stop motors
              digitalWrite(9,LOW); digitalWrite(10,LOW); //stop motors  
@@ -86,7 +81,6 @@ int randNumber = 0;
          }
         
          else {
-//             Serial.write(distance);
              digitalWrite(LEDPin, LOW); 
              
              //forward
