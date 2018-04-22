@@ -1,7 +1,7 @@
-# My_Tiny_News
+# My Tiny News
 
 Code for Arduino on the car: car_distance_callRespond
--To cennect to the motor that make car run and avoid obstacle
+- To cennect to the motor that make car run and avoid obstacle
 Code for Proceesing in raspberry pi: GetPoto
 - It used to check if the car is stopped and the lens is in the right side.
 
