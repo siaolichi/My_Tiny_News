@@ -7,7 +7,8 @@ Code for Proceesing in raspberry pi: GetPoto
 
 
 
-<h1>After connect to the raspi by SSH</h1><br>
+<h1>After connect to the raspi by SSH</h1>
+
 1. To get the photo from raspberry pi, run this code in your laptop:
 
 <pre>rsync -avz -e ssh pi@lichipi:camera/ /Users/Siao/Desktop/camera</pre>
