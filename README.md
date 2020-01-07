@@ -17,3 +17,11 @@ Code for Proceesing in raspberry pi: GetPoto
 <pre>sudo Xvfb :1 -screen 0 1024x768x24 &lt/dev/null &amp 
 export DISPLAY=":1"
 /home/pi/processing-3.3.5/processing-java --sketch=/home/pi/Desktop/GetPhoto --run</pre>
+
+# Data Training Hints for Windows
+
+## Environment Variable
+
+```
+set THEANO_FLAGS=mode=FAST_RUN,device=cuda,floatX=float32,,gpuarray.preallocate=0.4
+```
